@@ -1,0 +1,25 @@
+{
+  "name": "audiobook",
+  "displayName": "Audiobook",
+  "version": "0.1.0",
+  "description": "Joins a folder of mp3 parts into one .m4b audiobook with chapters, cover and book tags that Apple Books, BookPlayer and other players read, and checks the result.",
+  "author": {
+    "name": "Herman Harazha",
+    "url": "https://geragaraza.com"
+  },
+  "homepage": "https://github.com/geragarazagh/audiobook",
+  "repository": "https://github.com/geragarazagh/audiobook",
+  "license": "MIT",
+  "keywords": [
+    "audiobook",
+    "m4b",
+    "mp3",
+    "chapters",
+    "ffmpeg",
+    "apple-books",
+    "bookplayer",
+    "agent-skills"
+  ],
+  "supportUrl": "https://github.com/geragarazagh/audiobook/issues",
+  "privacyPolicyUrl": "https://geragaraza.com/skills/privacy/"
+}
