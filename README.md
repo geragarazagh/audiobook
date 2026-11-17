@@ -28,7 +28,7 @@ ffmpeg, and Python 3 for the helper script. The assistant checks for them and, w
 
 ### Terminal agents
 
-One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **run** from a local copy of this repository into an empty home folder on 2026-11-17 (the files installed were identical, linked for Claude Code); from GitHub **docs**:
+One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **run** (2026-11-17, from this repository on GitHub into an empty home folder; the files installed identical to the repository):
 
 ```sh
 npx skills add geragarazagh/audiobook -g
@@ -36,7 +36,7 @@ npx skills add geragarazagh/audiobook -g
 
 It puts the skill into `~/.agents/skills/audiobook`, which Codex, Cursor, Cline, OpenCode and most other agents read, and links it into `~/.claude/skills` for Claude Code.
 
-Claude Code, as a plugin — **run** from a local copy of this repository on 2026-11-17 (Claude Code 2.1.325: the marketplace added, the plugin installed, its `SKILL.md` identical); from GitHub **docs**:
+Claude Code, as a plugin — **run** (2026-11-17, from this repository on GitHub: the marketplace added, the plugin installed, its `SKILL.md` identical to the repository):
 
 ```sh
 claude plugin marketplace add geragarazagh/audiobook
