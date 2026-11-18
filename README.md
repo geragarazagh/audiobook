@@ -101,6 +101,8 @@ Until 0.2.0 (2026-11-18) the skill was named `audiobook`, in the repository gera
 - The same requests without the skill, twice: both made a working `.m4b` with chapters AVFoundation reads, but marked as music (brand M4A, no audiobook media kind) and encoded with ffmpeg's built-in AAC, about 7 % larger.
 - By hand on the same book: the helper script's chapter marks and the ffmpeg-only route's agree within 0.02 s over 1 h 45 min; a part cut off by an unfinished download was reported by the script's warning; the ffmpeg 9 bug was reproduced (cover copied from an mp3: AVFoundation 0 of 5 chapters) and the fix confirmed (5 of 5).
 
+Version 0.2.0 renames the skill from `audiobook` to `mp3-to-m4b` and sets the catalogue icons; what the skill does is unchanged. On 2026-11-18 the installs were run again under the new name from this repository's v0.2.0 release, each into an empty home folder: `npx skills add geragarazagh/mp3-to-m4b -g` (files identical to `skills/mp3-to-m4b`), the Claude Code plugin commands above in Claude Code 2.1.326 (the plugin's skill folder identical), and `gemini extensions install` in Gemini CLI 0.68.0 (installed from the release, version 0.2.0, the skill folder identical).
+
 Not tested: other models, other agents, Windows, chat apps, a model on Linux (the script was run by hand there), the installs marked **docs**, opening the file in Apple Books or BookPlayer themselves (AVFoundation stands in for them).
 
 ## What it cannot do
