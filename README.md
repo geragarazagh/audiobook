@@ -1,4 +1,4 @@
-<img src="assets/icon.png" width="128" alt="audiobook icon: a play sign inside a ring cut where each chapter ends">
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="audiobook icon: a play sign inside a ring cut where each chapter ends"></picture>
 
 # audiobook: a skill for AI assistants that makes an .m4b audiobook from mp3 files
 
