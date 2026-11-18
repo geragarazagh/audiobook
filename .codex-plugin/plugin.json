@@ -1,6 +1,6 @@
 {
   "name": "mp3-to-m4b",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Joins a folder of mp3 parts into one .m4b audiobook with chapters, cover and book tags that Apple Books, BookPlayer and other players read, and checks the result.",
   "author": {
     "name": "Herman Harazha",
