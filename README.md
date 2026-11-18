@@ -43,6 +43,12 @@ claude plugin marketplace add geragarazagh/audiobook
 claude plugin install audiobook@audiobook
 ```
 
+Gemini CLI, as an extension — **run** (2026-11-18, from this repository's latest release on GitHub, Gemini CLI 0.68.0, into an empty home folder: the extension installed and its skill listed by `gemini skills list`):
+
+```sh
+gemini extensions install https://github.com/geragarazagh/audiobook
+```
+
 By hand, any agent that reads the Agent Skills folder (Codex, OpenCode, OpenClaw, Hermes, Grok Build) — **docs**: copy `skills/audiobook` to `~/.agents/skills/audiobook`. Claude Code reads `~/.claude/skills/audiobook`; Antigravity reads `~/.gemini/config/skills/audiobook`.
 
 ### No skills in the agent
