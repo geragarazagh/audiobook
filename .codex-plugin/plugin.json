@@ -1,0 +1,30 @@
+{
+  "name": "audiobook",
+  "version": "0.1.1",
+  "description": "Joins a folder of mp3 parts into one .m4b audiobook with chapters, cover and book tags that Apple Books, BookPlayer and other players read, and checks the result.",
+  "author": {
+    "name": "Herman Harazha",
+    "url": "https://geragaraza.com"
+  },
+  "homepage": "https://github.com/geragarazagh/audiobook",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Audiobook",
+    "shortDescription": "Make an m4b from mp3 files",
+    "longDescription": "Point the assistant at a folder of audiobook parts (mp3, m4a, ogg, flac or wav) and it joins them with ffmpeg on the computer into one .m4b: the parts in the right order, one chapter per part with real chapter names, the cover, title, author and narrator, the sound kept as it was without extra size. It checks that the chapter track Apple Books and BookPlayer read is there before saying it is done. Nothing is sent anywhere and nothing is installed without the person's yes.",
+    "developerName": "Herman Harazha",
+    "category": "Productivity",
+    "capabilities": [],
+    "websiteURL": "https://github.com/geragarazagh/audiobook",
+    "supportURL": "https://github.com/geragarazagh/audiobook/issues",
+    "privacyPolicyURL": "https://geragaraza.com/skills/privacy/",
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png",
+    "defaultPrompt": [
+      "Make an audiobook for Apple Books from the mp3 files in this folder.",
+      "Join these parts into one m4b with chapters and the cover.",
+      "Name the chapters after the stories: here is the table of contents."
+    ]
+  }
+}
