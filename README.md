@@ -1,6 +1,6 @@
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="audiobook icon: a play sign inside a ring cut where each chapter ends"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.png"><img src="assets/icon-github.png" width="128" alt="mp3-to-m4b icon: a play sign inside a ring cut where each chapter ends"></picture>
 
-# audiobook: a skill for AI assistants that makes an .m4b audiobook from mp3 files
+# mp3-to-m4b: a skill for AI assistants that makes an .m4b audiobook from mp3 files
 
 A free, open source agent skill. Point the assistant at a folder of audiobook parts and say «make an audiobook» («join these into one m4b», «for Apple Books», «for BookPlayer on my iPhone») and it joins them with [ffmpeg](https://ffmpeg.org) on the computer into one `.m4b` file, then checks the file before saying it is done.
 
@@ -31,33 +31,33 @@ ffmpeg, and Python 3 for the helper script. The assistant checks for them and, w
 One command for every agent found on the computer (needs Node.js; `-g` installs for the user, without it for the current project only) — **run** (2026-11-17, from this repository on GitHub into an empty home folder; the files installed identical to the repository):
 
 ```sh
-npx skills add geragarazagh/audiobook -g
+npx skills add geragarazagh/mp3-to-m4b -g
 ```
 
-It puts the skill into `~/.agents/skills/audiobook`, which Codex, Cursor, Cline, OpenCode and most other agents read, and links it into `~/.claude/skills` for Claude Code.
+It puts the skill into `~/.agents/skills/mp3-to-m4b`, which Codex, Cursor, Cline, OpenCode and most other agents read, and links it into `~/.claude/skills` for Claude Code.
 
 Claude Code, as a plugin — **run** (2026-11-17, from this repository on GitHub: the marketplace added, the plugin installed, its `SKILL.md` identical to the repository):
 
 ```sh
-claude plugin marketplace add geragarazagh/audiobook
-claude plugin install audiobook@audiobook
+claude plugin marketplace add geragarazagh/mp3-to-m4b
+claude plugin install mp3-to-m4b@mp3-to-m4b
 ```
 
 Gemini CLI, as an extension — **run** (2026-11-18, from this repository's latest release on GitHub, Gemini CLI 0.68.0, into an empty home folder: the extension installed and its skill listed by `gemini skills list`):
 
 ```sh
-gemini extensions install https://github.com/geragarazagh/audiobook
+gemini extensions install https://github.com/geragarazagh/mp3-to-m4b
 ```
 
-By hand, any agent that reads the Agent Skills folder (Codex, OpenCode, OpenClaw, Hermes, Grok Build) — **docs**: copy `skills/audiobook` to `~/.agents/skills/audiobook`. Claude Code reads `~/.claude/skills/audiobook`; Antigravity reads `~/.gemini/config/skills/audiobook`.
+By hand, any agent that reads the Agent Skills folder (Codex, OpenCode, OpenClaw, Hermes, Grok Build) — **docs**: copy `skills/mp3-to-m4b` to `~/.agents/skills/mp3-to-m4b`. Claude Code reads `~/.claude/skills/mp3-to-m4b`; Antigravity reads `~/.gemini/config/skills/mp3-to-m4b`.
 
 ### No skills in the agent
 
-Paste the text of [`SKILL.md`](skills/audiobook/SKILL.md) into the agent's instructions (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md` or the agent's settings), or as the first message of a session. Without the script the assistant uses the ffmpeg-only route in the same text.
+Paste the text of [`SKILL.md`](skills/mp3-to-m4b/SKILL.md) into the agent's instructions (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md` or the agent's settings), or as the first message of a session. Without the script the assistant uses the ffmpeg-only route in the same text.
 
 ## Use
 
-Name the folder and say what you want, in any language. To call the skill by name: `/audiobook` in Claude Code (`/audiobook:audiobook` when installed as the plugin) and Antigravity; `$audiobook` in Codex.
+Name the folder and say what you want, in any language. To call the skill by name: `/mp3-to-m4b` in Claude Code (`/mp3-to-m4b:mp3-to-m4b` when installed as the plugin) and Antigravity; `$mp3-to-m4b` in Codex.
 
 ```
 Make an audiobook for Apple Books from the mp3 files in ~/Downloads/Moby Dick.
@@ -80,6 +80,8 @@ On an iPhone: BookPlayer opens the file from the Files app or AirDrop. Apple Boo
 - The installers are other people's programs with their own rules: `npx skills` (Vercel) sends an anonymous install count unless `DISABLE_TELEMETRY=1` is set.
 
 ## Tested on
+
+Until 0.2.0 (2026-11-18) the skill was named `audiobook`, in the repository geragarazagh/audiobook, which GitHub now redirects here; the runs below used that name.
 
 2026-11-16, in a fresh Claude Code configuration (its own login, no user instructions, only this skill and two others of the same author (YouTube downloads, text to speech), so that a near miss could start the wrong one): Claude Haiku 5.5 (`claude-haiku-5-5`) in Claude Code 2.1.325 on macOS 27.2 (Apple M3 Pro), ffmpeg 9.0.2 (Homebrew). Material: LibriVox's public-domain recording of Oscar Wilde's «The Happy Prince and Other Tales» (version 2, five mp3 parts, 1 h 45 min, 64 kbps mono). Checked by script with ffprobe and Apple's AVFoundation (what Apple Books and BookPlayer use to read chapters and cover):
 

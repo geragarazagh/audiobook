@@ -1,11 +1,11 @@
 ---
-name: audiobook
+name: mp3-to-m4b
 description: "Joins a folder of audio files, such as the mp3 parts of an audiobook, into one .m4b with chapters, cover and book tags that Apple Books, BookPlayer and other players read. Use when someone wants to make an audiobook or m4b from mp3 files, merge audiobook parts, or add chapters and a cover."
 license: MIT
 compatibility: "Needs an assistant that runs commands on the person's computer (a terminal agent) with ffmpeg; Python 3 for the helper script, which is optional. Chat apps only when their sandbox has ffmpeg and the files fit the upload limit."
 ---
 
-# Audiobook
+# MP3 to M4B
 
 Turns a folder of audio files (mp3 parts of an audiobook, or m4a, ogg, flac,
 wav) into one `.m4b` file: the parts joined in the right order, one chapter
@@ -34,7 +34,7 @@ ffmpeg. Without Python, use «Without the script» below.
 2. Look at the plan:
 
    ```
-   python3 /full/path/to/skills/audiobook/scripts/m4b.py plan "FOLDER"
+   python3 /full/path/to/skills/mp3-to-m4b/scripts/m4b.py plan "FOLDER"
    ```
 
    It prints the parts in the order they will be joined, the length of each,
@@ -70,7 +70,7 @@ ffmpeg. Without Python, use «Without the script» below.
 4. Build:
 
    ```
-   python3 /full/path/to/skills/audiobook/scripts/m4b.py build "FOLDER" -o "OUT.m4b" --title "…" --author "…"
+   python3 /full/path/to/skills/mp3-to-m4b/scripts/m4b.py build "FOLDER" -o "OUT.m4b" --title "…" --author "…"
    ```
 
    Put the `.m4b` next to the folder (in the folder that contains it), named
@@ -80,7 +80,7 @@ ffmpeg. Without Python, use «Without the script» below.
 5. Check:
 
    ```
-   python3 /full/path/to/skills/audiobook/scripts/m4b.py check "OUT.m4b" --parts NUMBER_OF_CHAPTERS
+   python3 /full/path/to/skills/mp3-to-m4b/scripts/m4b.py check "OUT.m4b" --parts NUMBER_OF_CHAPTERS
    ```
 
    It must end with `ok`. Read every «warning» and «problem» line. A
