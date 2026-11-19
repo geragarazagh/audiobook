@@ -1,8 +1,8 @@
 {
   "name": "mp3-to-m4b",
   "displayName": "MP3 to M4B",
-  "version": "0.2.1",
-  "description": "Joins a folder of mp3 parts into one .m4b audiobook with chapters, cover and book tags that Apple Books, BookPlayer and other players read, and checks the result.",
+  "version": "0.2.2",
+  "description": "Joins mp3 parts into one .m4b audiobook with chapters and cover.",
   "author": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
@@ -10,17 +10,6 @@
   "homepage": "https://github.com/geragarazagh/mp3-to-m4b",
   "repository": "https://github.com/geragarazagh/mp3-to-m4b",
   "license": "MIT",
-  "keywords": [
-    "mp3-to-m4b",
-    "audiobook",
-    "m4b",
-    "mp3",
-    "chapters",
-    "ffmpeg",
-    "apple-books",
-    "bookplayer",
-    "agent-skills"
-  ],
   "supportUrl": "https://github.com/geragarazagh/mp3-to-m4b/issues",
   "privacyPolicyUrl": "https://geragaraza.com/skills/privacy/",
   "icon": "./.claude-plugin/icon.png"

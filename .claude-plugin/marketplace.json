@@ -1,6 +1,6 @@
 {
   "name": "mp3-to-m4b",
-  "description": "The mp3-to-m4b skill: mp3 parts into one .m4b with chapters and cover.",
+  "description": "Joins mp3 parts into one .m4b audiobook with chapters and cover.",
   "owner": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
@@ -9,7 +9,7 @@
     {
       "name": "mp3-to-m4b",
       "source": "./",
-      "description": "Joins a folder of mp3 parts into one .m4b audiobook with chapters, cover and book tags, and checks the result."
+      "description": "Joins mp3 parts into one .m4b audiobook with chapters and cover."
     }
   ]
 }

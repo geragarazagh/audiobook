@@ -1,7 +1,7 @@
 {
   "name": "mp3-to-m4b",
-  "version": "0.2.1",
-  "description": "Joins a folder of mp3 parts into one .m4b audiobook with chapters, cover and book tags that Apple Books, BookPlayer and other players read, and checks the result.",
+  "version": "0.2.2",
+  "description": "Joins mp3 parts into one .m4b audiobook with chapters and cover.",
   "author": {
     "name": "Herman Harazha",
     "url": "https://geragaraza.com"
@@ -12,7 +12,7 @@
   "interface": {
     "displayName": "MP3 to M4B",
     "shortDescription": "Make an m4b from mp3 files",
-    "longDescription": "Point the assistant at a folder of audiobook parts (mp3, m4a, ogg, flac or wav) and it joins them with ffmpeg on the computer into one .m4b: the parts in the right order, one chapter per part with real chapter names, the cover, title, author and narrator, the sound kept as it was without extra size. It checks that the chapter track Apple Books and BookPlayer read is there before saying it is done. Nothing is sent anywhere and nothing is installed without the person's yes.",
+    "longDescription": "Joins mp3 parts into one .m4b audiobook with chapters and cover.",
     "developerName": "Herman Harazha",
     "category": "Productivity",
     "capabilities": [],
